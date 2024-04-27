@@ -1,0 +1,67 @@
+body {
+    /* Assuming the image is in the same folder as the HTML file */
+    background-image: url('./joanna-kosinska-7ACuHoezUYk-unsplash.jpg');
+    /* Additional properties to ensure full coverage and no repeat */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#form {
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    width: 25%;
+    border-radius: 4px;
+    margin: 120px auto;
+    padding: 50px;
+    backdrop-filter: blur(10px); /* Apply blur effect to the background seen through the form */
+    transition: width 0.5s, padding 0.5s; /* Smooth transition for resizing */
+    border: none; /* Optional: remove border if it was previously set */
+}
+
+/* Styling input fields within the form */
+#form input[type="text"], #form input[type="email"], #form input[type="password"] {
+    width: 100%; /* Full width of the form area */
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Rounded corners for input fields */
+    box-sizing: border-box; /* Border and padding included in the width */
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for inputs */
+}
+
+/* Placeholder styling */
+#form input::placeholder {
+    color: #aaa;
+    font-size: 1em; /* Adjust font size as needed */
+}
+
+#btn {
+    color: rgb(255, 255, 255);
+    background-color: rgb(108, 22, 189);
+    padding: 10px;
+    font-size: large;
+    border-radius: 10px;
+    width: 100%; /* Make button width responsive */
+    box-sizing: border-box; /* Include padding and border in the button's width */
+    transition: padding 0.5s; /* Smooth transition for padding */
+}
+
+@media screen and (max-width: 800px) { /* Adjusted breakpoint for medium-sized devices */
+    #form {
+        width: 50%; /* Adjust width to better fit medium-sized screens */
+        padding: 40px; /* Adjust padding */
+    }
+}
+
+@media screen and (max-width: 570px) {
+    #form {
+        width: 90%; /* Increase width for small screens */
+        padding: 30px; /* Adjust padding */
+        margin: 60px auto; /* Reduce top/bottom margin for smaller screens */
+    }
+
+    #btn {
+        padding: 15px; /* Larger padding for easier touch */
+    }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Disha Foundation - Student Profile Form</title>
+    <link rel="stylesheet" href="styles.css">
+   
+
+</head>
+<body>
+    <div class="form-container">
+        <h1>DISHA FOUNDATION</h1>
+        <h2>CHILD PROFILE FOR STUDENTS</h2>
+        <form action="student.php" method="POST">
+            <label for="student_name">Name of the student:</label><br>
+            <input type="text" id="student_name" name="student_name" required><br>
+
+            <label for="dob">D.O.B:</label><br>
+            <input type="date" id="dob" name="dob" required><br>
+
+            <label for="contact_no">Contact No.:</label><br>
+            <input type="text" id="contact_no" name="contact_no" required><br>
+
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" required></textarea><br>
+
+            <label for="in_disha_since">In Disha Since:</label><br>
+            <input type="date" id="in_disha_since" name="in_disha_since" required><br>
+
+            <label for="father_name">Father's Name:</label><br>
+            <input type="text" id="father_name" name="father_name" required><br>
+
+            <label for="mother_name">Mother's Name:</label><br>
+            <input type="text" id="mother_name" name="mother_name" required><br>
+
+            <label for="family_members">Family Members:</label><br>
+            <input type="number" id="family_members" name="family_members" required><br>
+
+            <label for="earning_members">Earning Members:</label><br>
+            <input type="number" id="earning_members" name="earning_members" required><br>
+
+            <label for="school_name">Name of the School:</label><br>
+            <input type="text" id="school_name" name="school_name" required><br>
+
+            <label for="class">Class:</label><br>
+            <input type="text" id="class" name="class" required><br>
+
+            <label for="school_timings">School Timings:</label><br>
+            <input type="text" id="school_timings" name="school_timings" required><br>
+
+            <label for="subjects">Subjects:</label><br>
+            <textarea id="subjects" name="subjects" required></textarea><br>
+
+            <label for="receiving_sponsorship">Receiving sponsorship from Disha:</label><br>
+            <select id="receiving_sponsorship" name="receiving_sponsorship" required>
+                <option value="" selected>Select</option>
+                <option value="1">YES</option>
+                <option value="0">NO</option>
+            </select><br>
+     
+
+            <!-- Tuition Details Section -->
+            <h3>Tuition Details</h3>
+            <label for="taking_tuitions">Taking Tuitions:</label><br>
+            <select id="taking_tuitions" name="taking_tuitions" required>
+                <option value="" selected>Select</option>
+                <option value="1">YES</option>
+                <option value="0">NO</option>
+            </select><br>
+      
+
+            <label for="tuition_subjects">Subjects:</label><br>
+            <textarea id="tuition_subjects" name="tuition_subjects"></textarea><br>
+
+            <label for="tuition_time">Time:</label><br>
+            <input type="text" id="tuition_time" name="tuition_time"><br>
+
+            <label for="tuition_place">Place:</label><br>
+            <input type="text" id="tuition_place" name="tuition_place"><br>
+
+            <label for="fees_paid">Fees Paid:</label><br>
+            <select id="fees_paid" name="fees_paid" required>
+                <option value="" selected>Select</option>
+    <option value="1">YES</option>
+    <option value="0">NO</option>
+</select><br>
+         
+
+            <label for="amount_paid">Amount Paid:</label><br>
+            <input type="number" id="amount_paid" name="amount_paid" step="1000"><br>
+
+            <!-- Part-time Job Section -->
+            <h3>Part-time Job</h3>
+            <label for="part_time_job">Any Part-time Job:</label><br>
+            <select id="part_time_job" name="part_time_job" required>
+                <option value="" selected>Select</option>
+                <option value="1">YES</option>
+                <option value="0">NO</option>
+            </select><br>
+         
+
+            <label for="job_description">Job Description:</label><br>
+            <textarea id="job_description" name="job_description"></textarea><br>
+
+            <!-- Interests and Contributions Section -->
+            <h3>Additional Details</h3>
+            <label for="interests">Interests / Hobbies:</label><br>
+            <textarea id="interests" name="interests"></textarea><br>
+
+            <label for="how_help_back">How will you be able to help back in Disha:</label><br>
+            <textarea id="how_help_back" name="how_help_back"></textarea><br>
+
+            <!-- Submission Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
